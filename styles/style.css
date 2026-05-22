@@ -1,0 +1,998 @@
+:root {
+  --font-family: "Haval", sans-serif;
+}
+
+body {
+  font-family: "Manrope", "Montserrat", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1920px;
+  font-weight: 400px;
+}
+
+/* HEADER  */
+
+.header {
+  background-color: black;
+}
+
+.header a{
+  font-weight: 500;
+  font-size: 15px;
+  color: #fff;
+}
+
+.header-top {
+  padding: 14px 390px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.header-top-logo {
+  width: 307px;
+}
+
+.header-top-logo img {
+  width: 162px;
+  height: 42px;
+}
+
+.header-top-phone {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-top-phone a {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.header-top-phone img{
+  width: 21px;
+  height: 24px;
+}
+
+.header-top-info {
+  display: flex;
+  gap: 10px;
+}
+
+.header-top-info img {
+  width: 17px;
+  height: 28px;
+}
+
+.header-top-text .geolocation{
+  font-size: 13px;
+  color: #fff;
+  margin-bottom: 1px;
+}
+
+.header-top-text .worktime {
+  font-size: 12px;
+  color: #fff;
+}
+
+.header-bottom {
+  padding: 10px 390px;
+}
+
+.header-bottom-nav, .header-bottom-nav ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-bottom-nav a {
+  transition: all 0.2s ease-in-out;
+}
+
+.header-bottom-nav-cars {
+  gap: 13px;
+  font-weight: 500;
+  font-size: 10px;
+}
+
+.header-bottom-nav a:hover{
+  opacity: 0.5;
+}
+
+.header-bottom-nav-sections {
+  font-size: 11px;
+  gap: 13px;
+}
+
+/* PRESENTATION  */
+
+.presentation img {
+  object-fit: cover;
+  width: 100%;
+  display: block;
+}
+
+.presentation .container {
+  position: relative;
+}
+
+.presentation-ads {
+  text-align: center;
+  position: absolute;
+  width: fit-content;
+  left: 50%;
+  top: 63px;
+  transform: translateX(-50%);
+
+}
+
+.presentation-ads-text {
+  padding: 17px 142px 20px 142px;
+  margin-bottom: 24px;
+  backdrop-filter: blur(10.600000381469727px);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 38.72%, rgba(0, 0, 0, 0.5) 61.63%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.presentation-green {
+  font-weight: 500;
+  font-size: 40px;
+  text-align: center;
+  color: #00cabf;
+}
+
+.presentation-white {
+  margin-bottom: 10px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 138%;
+  text-align: center;
+}
+
+.presentation-btn {
+  padding: 20px 22px;
+  border: 0;
+  background-color: #00cabf;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.presentation-btn:hover {
+  background-color: blue;
+  transform: scale(1.2);
+}
+
+/* BOOKING */
+
+.booking .container{
+  padding: 35px 390px 18px 390px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.booking-timer {
+  text-align: center;
+  width: 571px;
+}
+
+.booking-timer p{
+  margin-bottom: 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.booking-btn button{
+  padding: 25px 70px;
+  background-color: #00cabf;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.booking-btn button:hover {
+  background-color: blue;
+  transform: scale(1.2);
+}
+
+.booking-block-svg {
+  position: absolute;
+  padding: 7px;
+  background: rgba(0, 0, 1, 0.2);
+  left: 56px;
+  bottom: 16px;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.booking-block-svg:hover {
+  transform: scale(1.2);
+}
+
+.booking-block-svg-lower {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  background-color: black;
+  padding: 16px;
+  border-radius: 28px;
+}
+
+.booking-svg {
+  display: block;
+}
+
+/* FORM  */
+
+.form input {
+  padding: 10px 20px 10px;
+}
+
+.form h3 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form button {
+  padding: 7px 10px;
+  background-color: #00cabf;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+}
+
+/* CARS  */
+
+.cars .container {
+  padding: 56px 390px 19px;
+  display: flex;
+  gap: 30px;
+}
+
+/* SWIPER */
+
+.swiper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.card {
+  background: #f3f3f3;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 15px);
+}
+
+.card-descr {
+  background: #fff;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 26px;
+}
+
+.card-descr-text {
+  padding-top: 24px;
+  padding-left: 24px;
+  margin-bottom: 13px;
+}
+
+.card-descr-text .name{
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 139%;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.card-descr-text .price{
+  font-weight: 300;
+  font-size: 20px;
+  color: #000;
+}
+
+.card-descr-text span{
+  font-weight: 500;
+  color: #00cabf;
+}
+
+.card-registration {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 27px;
+  right: 24px;
+  font-weight: 300;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.card-registration:hover img {
+  transform: scale(1.15);
+}
+
+.card-registration img {
+  background-color: #00cabf;
+  border-radius: 100%;
+  margin-right: 8px;
+  width: 28px;
+  height: 28px;
+  box-sizing: border-box;
+  object-fit: scale-down;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.swiper-wrapper {
+  position: relative;
+}
+
+.card .background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.card .car {
+  width: 100%;
+  position: relative;
+  display: block;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+.card-label {
+  position: absolute;
+  padding: 14px 42px;
+  right: 0;
+  top: -62px;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  background: #00cabf;
+  max-width: 187px;
+}
+
+.card-label-have {
+  position: absolute;
+  padding: 7px 42px;
+  right: 0;
+  top: -62px;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  background: #00cabf;
+  max-width: 187px;
+}
+
+.card-label-quantity {
+  color: #000;
+}
+
+.colors {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 27px;
+}
+
+.colors div {
+  border-radius: 14px;
+  width: 28px;
+  height: 28px;
+}
+
+.colors .black {
+  background-color: #000;
+  cursor: pointer;
+}
+
+.colors .light-grey {
+  background-color: #e7e7e7;
+  cursor: pointer;
+}
+
+.colors .grey {
+  background: #a1a1a1;
+  cursor: pointer;
+}
+
+.clicked {
+  box-shadow: 0 0 0 3px #fff, 0 0 5px 2px #000;
+}
+
+.colors .red {
+  background-color: #a13a21;
+  cursor: pointer;
+}
+
+.card-list {
+  margin-bottom: 32px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 13px;
+  font-weight: 300;
+  font-size: 12px;
+  list-style: none;
+}
+
+.card-list li {
+  cursor: pointer;
+}
+
+.card-list li:hover img {
+  background-color: #00cabf;
+  transform: scale(1.15);
+}
+
+.card-list li img {
+  background-color: black;
+  border-radius: 100%;
+  margin-right: 8px;
+  width: 28px;
+  height: 28px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+  object-fit: scale-down;
+}
+
+.card-list li  {
+  display: flex;
+  align-items: center;
+}
+
+.card-btns {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.card-btns button{
+  padding: 22px 0;
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-btns button:hover {
+  transform: scale(0.9);
+}
+
+.btn-price {
+  background: #00cabf;
+  border: 0;
+}
+
+.btn-credit {
+  border: 0;
+  background: #000;
+}
+
+.btn-equipment {
+  color: #000 !important;
+  border: 1px solid #000;
+}
+
+/*  АДАПТИВ  */
+
+@media (max-width: 1600px) {
+  .header-top {
+    padding: 14px 100px;
+  }
+
+  .header-bottom {
+    padding: 10px 100px;
+  }
+
+  .booking .container {
+    padding: 35px 100px 18px;
+  }
+
+  .cars .container {
+    padding: 56px 100px 19px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .header-top {
+    padding: 14px 50px;
+  }
+
+  .header-bottom {
+    padding: 10px 50px;
+  }
+
+  .booking .container {
+    padding: 35px 50px 18px;
+  }
+
+  .cars .container {
+    padding: 56px 50px 19px;
+  }
+
+  .presentation-ads-text {
+    padding: 17px 80px 20px;
+  }
+
+  .presentation-green,
+  .presentation-white {
+    font-size: 32px;
+  }
+
+  .booking .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .cars .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .header-top-nav-cars {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .presentation-ads {
+    top: 30px;
+  }
+
+  .presentation-ads-text {
+    padding: 12px 40px 15px;
+  }
+
+  .presentation-green,
+  .presentation-white {
+    font-size: 28px;
+  }
+
+  .presentation-btn {
+    padding: 15px 20px;
+    font-size: 14px;
+  }
+
+}
+
+@media (max-width: 992px) {
+  .header-top {
+    padding: 14px 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .header-bottom {
+    padding: 10px 20px;
+  }
+
+  .header-bottom-nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .header-bottom-nav-cars {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .header-bottom-nav-sections {
+    justify-content: center;
+  }
+
+  .booking .container {
+    padding: 35px 20px 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .booking-timer {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .booking-btn button {
+    padding: 20px 50px;
+  }
+
+  .booking-block-svg {
+    left: 20px;
+    bottom: 10px;
+  }
+
+  .cars .container {
+    padding: 56px 20px 19px;
+  }
+
+  .card {
+    padding: 25px;
+  }
+
+  .card-label,
+  .card-label-have {
+    padding: 7px 20px;
+    top: -50px;
+    font-size: 10px;
+  }
+
+  .card-descr-text {
+    padding-top: 16px;
+    padding-left: 16px;
+  }
+
+  .card-descr-text .name {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .card-descr-text .price {
+    font-size: 16px;
+  }
+
+  .card-registration {
+    top: 16px;
+    right: 16px;
+    font-size: 10px;
+  }
+
+  .card-registration img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .card-list {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .card-btns button {
+    padding: 15px 0;
+    font-size: 12px;
+  }
+
+  .card-list li img {
+    display: none;
+  }
+
+  .card-registration img {
+    display: none;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .header-top-logo {
+    width: auto;
+  }
+
+  .header-top-logo img {
+    width: 120px;
+    height: auto;
+  }
+
+  .header-top-phone a {
+    font-size: 12px;
+  }
+
+  .header-top-phone img {
+    width: 16px;
+    height: 18px;
+  }
+
+  .header-top-info img {
+    width: 14px;
+    height: 22px;
+  }
+
+  .header-top-text .geolocation {
+    font-size: 11px;
+  }
+
+  .header-top-text .worktime {
+    font-size: 10px;
+  }
+
+  .header-bottom-nav-cars li a {
+    font-size: 8px;
+  }
+
+  .header-bottom-nav-sections li a {
+    font-size: 9px;
+  }
+
+  .presentation-ads {
+    top: 15px;
+  }
+
+  .presentation-ads-text {
+    padding: 8px 20px 10px;
+    margin-bottom: 10px;
+  }
+
+  .presentation-green,
+  .presentation-white {
+    font-size: 18px;
+  }
+
+  .presentation-btn {
+    padding: 10px 16px;
+    font-size: 12px;
+  }
+
+  .booking-timer p {
+    font-size: 14px;
+  }
+
+  .booking-btn button {
+    padding: 15px 30px;
+    font-size: 14px;
+  }
+
+  .booking-block-svg-lower {
+    padding: 10px;
+  }
+
+  .booking-svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .card-label,
+  .card-label-have {
+    padding: 5px 15px;
+    top: -40px;
+    font-size: 9px;
+    max-width: 140px;
+  }
+
+  .card-descr-text .name {
+    font-size: 16px;
+  }
+
+  .card-descr-text .price {
+    font-size: 14px;
+  }
+
+  .card-registration {
+    top: 12px;
+    right: 12px;
+    font-size: 8px;
+  }
+
+  .card-registration img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .colors div {
+    width: 22px;
+    height: 22px;
+  }
+
+  .colors {
+    gap: 10px;
+  }
+
+  .card-list li {
+    font-size: 10px;
+  }
+
+  .card-list li img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .card-btns button {
+    padding: 12px 0;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header-top {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header-bottom-nav-cars {
+    gap: 8px;
+  }
+
+  .presentation-green,
+  .presentation-white {
+    font-size: 14px;
+  }
+
+  .presentation-ads-text {
+    padding: 5px 12px 8px;
+  }
+
+  .presentation-btn {
+    padding: 8px 12px;
+    font-size: 10px;
+  }
+
+  .booking-timer p {
+    font-size: 12px;
+  }
+
+  .booking-btn button {
+    padding: 12px 20px;
+    font-size: 12px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .card-descr-text .name {
+    font-size: 14px;
+  }
+
+  .card-descr-text .price {
+    font-size: 12px;
+  }
+
+  .card-label,
+  .card-label-have {
+    padding: 4px 10px;
+    top: -35px;
+    font-size: 8px;
+    max-width: 120px;
+  }
+
+  .card-registration {
+    top: 10px;
+    right: 10px;
+  }
+
+  .colors div {
+    width: 18px;
+    height: 18px;
+    border-radius: 10px;
+  }
+
+  .card-list li img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .card-btns {
+    gap: 8px;
+  }
+
+  .card-btns button {
+    padding: 10px 0;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .presentation-green,
+  .presentation-white {
+    font-size: 12px;
+  }
+
+  .presentation-ads-text {
+    padding: 4px 8px 6px;
+  }
+
+  .card-descr-text .name {
+    font-size: 12px;
+  }
+
+  .card-descr-text .price {
+    font-size: 11px;
+  }
+
+  .card-label,
+  .card-label-have {
+    padding: 3px 8px;
+    top: -30px;
+    font-size: 7px;
+    max-width: 100px;
+  }
+
+  .card-registration {
+    font-size: 7px;
+  }
+
+  .card-registration img {
+    width: 14px;
+    height: 14px;
+  }
+
+  .card-list li {
+    font-size: 9px;
+  }
+
+  .card-btns button {
+    font-size: 9px;
+  }
+}
+
+
+
+
+
+
+
+
+
